@@ -5,8 +5,8 @@ import routes from "./routes/index.js";
 const app = express();
 
 const allowedOrigins = [
-  "http://localhost:5173",
-  "https://1-fi-marketplace-gamma.vercel.app/",
+  "http://localhost:5173",  
+  "https://1-fi-marketplace-gamma.vercel.app",
 ];
 
 app.use(
