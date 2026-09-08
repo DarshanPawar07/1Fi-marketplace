@@ -4,9 +4,14 @@ import routes from "./routes/index.js";
 
 const app = express();
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://1-fi-marketplace-gamma.vercel.app/",
+];
+
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: allowedOrigins,
   })
 );
 
